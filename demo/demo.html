@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+		<title>
+			Demo of jQuery.getComments()
+		</title>
+    </head>
+    <body>
+		<noscript>Please enable javascript.</noscript>
+		<p id="pWIthComment"><!--This comment is hidden inside this paragraph. --></p>
+        <div id="testArea"></div>
+        
+        <script src="../vendors/jquery/jquery-latest.js"></script>
+		<script src="../src/jQuery.getComments.js"></script>  
+		<script type="text/javascript">
+		$(function(){
+			var comments = $("#pWIthComment").getComments( true );
+			$("#pWIthComment").html( comments.join('<br/>') );
+		});
+		</script>
+    </body>
+</html>
