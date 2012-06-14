@@ -28,6 +28,10 @@ $(function () {
 		}
 		return result;
 	};
+	/*
+	* @function $.fn.getComments
+	* @args {boolean} asArray - If true, returns an array of the comments values. Otherwise returns an array of comment nodes.
+	*/
 	$.fn.getComments = function (asArray) {
 		return getCommentsFromEl(this, asArray);
 	};
