@@ -1,3 +1,6 @@
+# Note
+Project is retired and not under active development.
+
 #jQuery.getComments#
 
 A jQuery plugin to help you retrieve comments hidden within HTML elements.
